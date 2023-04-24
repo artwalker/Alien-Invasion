@@ -1,6 +1,7 @@
 import pygame
 
 class Ship():
+    """A class to manage the ship."""
 
     def __init__(self, ai_settings, screen):
         """初始化飞船并设置其初始位置"""
@@ -22,6 +23,7 @@ class Ship():
         # 移动标志
         self.moving_right = False
         self.moving_left = False
+
 
     def update(self):
         """根据移动标志调整飞船的位置"""
